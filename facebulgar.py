@@ -9,12 +9,12 @@ known_encodings = []
 known_names = []
 
 # Telegram bot details
-bot_token = '7900161841:AAGL69yunJLhao1Prxpwwb3RE5lJhM_mk6E'
-chat_id = '1208177177'
+bot_token = '{BotToken}'
+chat_id = '{Your ChatID}'
 
 # Function to send Telegram message
 def send_telegram_notification(message):
-    url = f'https://api.telegram.org/bot7900161841:AAGL69yunJLhao1Prxpwwb3RE5lJhM_mk6E/sendMessage'
+    url = f'https://api.telegram.org/bot{botToken}/sendMessage'
     data = {'chat_id': chat_id, 'text': message}
     try:
         response = requests.post(url, data=data)
